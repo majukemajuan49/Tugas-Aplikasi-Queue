@@ -1,0 +1,263 @@
+PROGRAM ANTREAN LAYANAN LOKET
+
+
+==================== SKENARIO 1: SESUAI TUGAS ====================
+
+--- Kondisi awal ---
+
+########## KONDISI ANTREAN ##########
+[Antrean A - Administrasi] (1 orang)
+--- Antrean ke-1 ---
+ID      : 1
+Nama    : Budi
+Layanan : A
+[Antrean B - Pembayaran] (2 orang)
+--- Antrean ke-1 ---
+ID      : 2
+Nama    : Sari
+Layanan : B
+--- Antrean ke-2 ---
+ID      : 3
+Nama    : Andi
+Layanan : B
+[Antrean I - Informasi] (0 orang)
+(kosong)
+[Antrean P - Pengaduan] (2 orang)
+--- Antrean ke-1 ---
+ID      : 4
+Nama    : Dewi
+Layanan : P
+--- Antrean ke-2 ---
+ID      : 5
+Nama    : Rina
+Layanan : P
+
+########## KONDISI LOKET ##########
+=== LOKET 1 ===
+Status          : 0 (kosong)
+Jenis layanan   : A, B
+Sedang dilayani : -
+Sudah dilayani (0 orang): -
+
+=== LOKET 2 ===
+Status          : 0 (kosong)
+Jenis layanan   : B
+Sedang dilayani : -
+Sudah dilayani (0 orang): -
+
+=== LOKET 3 ===
+Status          : 0 (kosong)
+Jenis layanan   : I, P
+Sedang dilayani : -
+Sudah dilayani (0 orang): -
+
+=== LOKET 4 ===
+Status          : 0 (kosong)
+Jenis layanan   : P
+Sedang dilayani : -
+Sudah dilayani (0 orang): -
+
+>>>>>>>>>> RONDE 1 <<<<<<<<<<
+
+########## KONDISI ANTREAN ##########
+[Antrean A - Administrasi] (0 orang)
+(kosong)
+[Antrean B - Pembayaran] (1 orang)
+--- Antrean ke-1 ---
+ID      : 3
+Nama    : Andi
+Layanan : B
+[Antrean I - Informasi] (0 orang)
+(kosong)
+[Antrean P - Pengaduan] (0 orang)
+(kosong)
+
+########## KONDISI LOKET ##########
+=== LOKET 1 ===
+Status          : 1 (melayani)
+Jenis layanan   : A, B
+Sedang dilayani :
+ID      : 1
+Nama    : Budi
+Layanan : A
+Sudah dilayani (0 orang): -
+
+=== LOKET 2 ===
+Status          : 1 (melayani)
+Jenis layanan   : B
+Sedang dilayani :
+ID      : 2
+Nama    : Sari
+Layanan : B
+Sudah dilayani (0 orang): -
+
+=== LOKET 3 ===
+Status          : 1 (melayani)
+Jenis layanan   : I, P
+Sedang dilayani :
+ID      : 4
+Nama    : Dewi
+Layanan : P
+Sudah dilayani (0 orang): -
+
+=== LOKET 4 ===
+Status          : 1 (melayani)
+Jenis layanan   : P
+Sedang dilayani :
+ID      : 5
+Nama    : Rina
+Layanan : P
+Sudah dilayani (0 orang): -
+
+>>>>>>>>>> RONDE 2 <<<<<<<<<<
+
+########## KONDISI ANTREAN ##########
+[Antrean A - Administrasi] (0 orang)
+(kosong)
+[Antrean B - Pembayaran] (0 orang)
+(kosong)
+[Antrean I - Informasi] (0 orang)
+(kosong)
+[Antrean P - Pengaduan] (0 orang)
+(kosong)
+
+########## KONDISI LOKET ##########
+=== LOKET 1 ===
+Status          : 1 (melayani)
+Jenis layanan   : A, B
+Sedang dilayani :
+ID      : 3
+Nama    : Andi
+Layanan : B
+Sudah dilayani (1 orang):
+ID      : 1
+Nama    : Budi
+Layanan : A
+
+=== LOKET 2 ===
+Status          : 0 (kosong)
+Jenis layanan   : B
+Sedang dilayani : -
+Sudah dilayani (1 orang):
+ID      : 2
+Nama    : Sari
+Layanan : B
+
+=== LOKET 3 ===
+Status          : 0 (kosong)
+Jenis layanan   : I, P
+Sedang dilayani : -
+Sudah dilayani (1 orang):
+ID      : 4
+Nama    : Dewi
+Layanan : P
+
+=== LOKET 4 ===
+Status          : 0 (kosong)
+Jenis layanan   : P
+Sedang dilayani : -
+Sudah dilayani (1 orang):
+ID      : 5
+Nama    : Rina
+Layanan : P
+
+>>>>>>>>>> RONDE 3 <<<<<<<<<<
+
+########## KONDISI ANTREAN ##########
+[Antrean A - Administrasi] (0 orang)
+(kosong)
+[Antrean B - Pembayaran] (0 orang)
+(kosong)
+[Antrean I - Informasi] (0 orang)
+(kosong)
+[Antrean P - Pengaduan] (0 orang)
+(kosong)
+
+########## KONDISI LOKET ##########
+=== LOKET 1 ===
+Status          : 0 (kosong)
+Jenis layanan   : A, B
+Sedang dilayani : -
+Sudah dilayani (2 orang):
+ID      : 1
+Nama    : Budi
+Layanan : A
+--------------------
+ID      : 3
+Nama    : Andi
+Layanan : B
+
+=== LOKET 2 ===
+Status          : 0 (kosong)
+Jenis layanan   : B
+Sedang dilayani : -
+Sudah dilayani (1 orang):
+ID      : 2
+Nama    : Sari
+Layanan : B
+
+=== LOKET 3 ===
+Status          : 0 (kosong)
+Jenis layanan   : I, P
+Sedang dilayani : -
+Sudah dilayani (1 orang):
+ID      : 4
+Nama    : Dewi
+Layanan : P
+
+=== LOKET 4 ===
+Status          : 0 (kosong)
+Jenis layanan   : P
+Sedang dilayani : -
+Sudah dilayani (1 orang):
+ID      : 5
+Nama    : Rina
+Layanan : P
+Simulasi selesai pada ronde 3.
+
+
+==================== SKENARIO 2: LOKET 1 DIPEREBUTKAN A DAN B ====================
+1 pengunjung A (id 1), 2 pengunjung B (id 2 dan 3). Diuji: urutan A -> B.
+Ronde 1 | sisa antrean A=0 B=1 I=0 P=0 | L1[P1] L2[P2] L3[-] L4[-] 
+Ronde 2 | sisa antrean A=0 B=0 I=0 P=0 | L1[P3] L2[-] L3[-] L4[-] 
+Ronde 3 | sisa antrean A=0 B=0 I=0 P=0 | L1[-] L2[-] L3[-] L4[-] 
+Simulasi selesai pada ronde 3.
+
+
+==================== SKENARIO 3: LOKET 3 DIPEREBUTKAN I DAN P ====================
+1 pengunjung I (id 1), 3 pengunjung P (id 2 sampai 4). Diuji: nomor loket terkecil.
+Ronde 1 | sisa antrean A=0 B=0 I=0 P=2 | L1[-] L2[-] L3[P1] L4[P2] 
+Ronde 2 | sisa antrean A=0 B=0 I=0 P=0 | L1[-] L2[-] L3[P3] L4[P4] 
+Ronde 3 | sisa antrean A=0 B=0 I=0 P=0 | L1[-] L2[-] L3[-] L4[-] 
+Simulasi selesai pada ronde 3.
+
+
+==================== SKENARIO 4: ANTREAN PENUH ====================
+11 pengunjung B masuk, kapasitas antrean 10. Diuji: pengunjung ke-11 ditolak.
+ERR: queue full, can't enqueue another element.
+Ukuran antrean B: 10
+Ronde 1 | sisa antrean A=0 B=8 I=0 P=0 | L1[P1] L2[P2] L3[-] L4[-] 
+Ronde 2 | sisa antrean A=0 B=6 I=0 P=0 | L1[P3] L2[P4] L3[-] L4[-] 
+Ronde 3 | sisa antrean A=0 B=4 I=0 P=0 | L1[P5] L2[P6] L3[-] L4[-] 
+Ronde 4 | sisa antrean A=0 B=2 I=0 P=0 | L1[P7] L2[P8] L3[-] L4[-] 
+Ronde 5 | sisa antrean A=0 B=0 I=0 P=0 | L1[P9] L2[P10] L3[-] L4[-] 
+Ronde 6 | sisa antrean A=0 B=0 I=0 P=0 | L1[-] L2[-] L3[-] L4[-] 
+Simulasi selesai pada ronde 6.
+
+
+==================== SKENARIO 5: KODE LAYANAN TIDAK VALID ====================
+Kode 'X' dan 'a' (huruf kecil). Diuji: ditolak, tidak masuk antrean manapun.
+ERR: kode layanan 'X' milik pengunjung 2 tidak valid.
+ERR: kode layanan 'a' milik pengunjung 3 tidak valid.
+Ronde 1 | sisa antrean A=0 B=0 I=0 P=0 | L1[P1] L2[-] L3[-] L4[-] 
+Ronde 2 | sisa antrean A=0 B=0 I=0 P=0 | L1[-] L2[-] L3[-] L4[-] 
+Simulasi selesai pada ronde 2.
+
+
+==================== SKENARIO 6: PENGUNJUNG DATANG DI TENGAH SIMULASI ====================
+2 pengunjung B (id 1 dan 2), lalu setelah ronde 1 datang id 3 (B) dan id 4 (A).
+Ronde 1 | sisa antrean A=0 B=0 I=0 P=0 | L1[P1] L2[P2] L3[-] L4[-] 
+(pengunjung baru datang: id 3 layanan B, id 4 layanan A)
+Ronde 2 | sisa antrean A=0 B=0 I=0 P=0 | L1[P4] L2[P3] L3[-] L4[-] 
+Ronde 3 | sisa antrean A=0 B=0 I=0 P=0 | L1[-] L2[-] L3[-] L4[-] 
+Simulasi selesai pada ronde 3.
