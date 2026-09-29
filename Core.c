@@ -18,12 +18,16 @@ void MasukAntrean(Pengunjung p, QueueP *QA, QueueP *QB, QueueP *QI, QueueP *QP) 
     // -
 
     // algoritma
-    switch (GetLayanan(p)) {
-        case 'A': Enqueue(QA, p); break;
-        case 'B': Enqueue(QB, p); break;
-        case 'I': Enqueue(QI, p); break;
-        case 'P': Enqueue(QP, p); break;
-        default : printf("ERR: kode layanan '%c' milik pengunjung %d tidak valid.\n", GetLayanan(p), GetId(p));
+    if (GetLayanan(p) == 'A') {
+        Enqueue(QA, p);
+    } else if (GetLayanan(p) == 'B') {
+        Enqueue(QB, p);
+    } else if (GetLayanan(p) == 'I') {
+        Enqueue(QI, p);
+    } else if (GetLayanan(p) == 'P') {
+        Enqueue(QP, p);
+    } else {
+        printf("ERR: kode layanan '%c' milik pengunjung %d tidak valid.\n", GetLayanan(p), GetId(p));
     }
 }
 
